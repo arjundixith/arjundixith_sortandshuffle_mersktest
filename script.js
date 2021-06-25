@@ -11,14 +11,12 @@ window.onload = function() {
         // create ul element and set the attributes.
         var ul = document.createElement('ul');
         ul.setAttribute('style', 'padding: 0; margin: 0;');
-        ul.setAttribute('id', 'theList');
         ul.id = "shuffleAndSort";
 
         for (i = 0; i <= arr.length - 1; i++) {
             var li = document.createElement('li'); // create li element.
 
             li.innerHTML = arr[i]; // assigning text to li using array value.
-            li.setAttribute('style', 'display: block;'); // remove the bullets.
             li.className = "li-" + (i + 1);
 
             ul.appendChild(li); // append li to ul.
